@@ -322,6 +322,9 @@
         <ObjectProperty IRI="#connectedTo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#depend"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasComponent"/>
     </Declaration>
     <Declaration>
@@ -383,9 +386,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#require"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#requireComponent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#requireSkill"/>
@@ -916,6 +916,10 @@
         <ObjectProperty IRI="#location"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#depend"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasComponent"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1000,10 +1004,6 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#requireComponent"/>
-        <ObjectProperty IRI="#require"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#requireSkill"/>
         <ObjectProperty IRI="#require"/>
     </SubObjectPropertyOf>
@@ -1029,6 +1029,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#connectedTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#depend"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1088,10 +1092,6 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#requireComponent"/>
-        <Class IRI="#RobotTask"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#requireSkill"/>
         <Class IRI="#RobotTask"/>
     </ObjectPropertyDomain>
@@ -1105,6 +1105,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#connectedTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#depend"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1162,10 +1166,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#require"/>
         <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#requireComponent"/>
-        <Class IRI="#RobotComponent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requireSkill"/>
